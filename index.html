@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ayush Sahu</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <h1 class="welcome-heading">Welcome to Ayush Sahu’s Portfolio</h1>
+
+  <!-- Resume + Dark Mode Toggle -->
+  <div class="top-right-link">
+    <a href="https://drive.google.com/file/d/19SuOgPUHmgrnT3xoQgBiyDPqLGBxw2n0/view?usp=sharing" target="_blank">Resume</a>
+    &nbsp; | &nbsp;
+    <button id="dark-mode-toggle" style="border:none; background:none; cursor:pointer; font-size:1.2rem;">
+      🌙
+    </button>
+  </div>
+
+  <!-- About Section -->
+  <section id="about-page">
+    <img src="portfolio_image.jpg" alt="Ayush Sahu" class="profile-img" id="open-photo" />
+    <h1>Ayush Sahu</h1>
+    <p>
+      Hi, I'm Ayush Sahu — a curious mind passionate about technology, creativity, and continuous growth. 
+      This portfolio is a glimpse into my journey: the skills I've sharpened, the projects I've built, and the challenges I've embraced along the way.
+      Whether it's coding, designing, or exploring new ideas, I believe in learning by doing and improving with every step. 
+      Feel free to explore my work, and thank you for stopping by — I hope it inspires or helps you in some way.
+    </p>
+
+    <div class="circle-buttons">
+      <a href="aboutme.html">About me</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="internships.html">Internships</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Crafted with ❤️ & curiosity.</p>
+      <p>Connect with me:</p>
+      <div class="social-icons">
+        <a href="mailto:ayushsahu7649@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Ayush-7649" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/ayushsahu28" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/Ayushsahu7649?t=hGb_niH27OJnXRsLl67hQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="tel:+919755407649" target="_blank"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Image -->
+  <div id="photo-modal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-photo" src="portfolio_image.jpg" alt="Ayush Sahu" />
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    // Dark Mode Toggle
+    const toggleBtn = document.getElementById('dark-mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
