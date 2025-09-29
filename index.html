@@ -8,51 +8,53 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="light-mode">
 
+ <!-- Top Right Controls -->
+<div class="top-right-controls">
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <i class="fa fa-moon"></i>
+  </button>
+  <a href="https://drive.google.com/file/d/19SuOgPUHmgrnT3xoQgBiyDPqLGBxw2n0/view?usp=sharing" target="_blank" class="resume-link">Resume</a>
+</div>
+
+
+  <!-- Header -->
   <h1 class="welcome-heading">Welcome to Ayush Sahu’s Portfolio</h1>
-
-  <!-- Resume + Dark Mode Toggle -->
-  <div class="top-right-link">
-    <a href="https://drive.google.com/file/d/19SuOgPUHmgrnT3xoQgBiyDPqLGBxw2n0/view?usp=sharing" target="_blank">Resume</a>
-    &nbsp; | &nbsp;
-    <button id="dark-mode-toggle" style="border:none; background:none; cursor:pointer; font-size:1.2rem;">
-      🌙
-    </button>
-  </div>
 
   <!-- About Section -->
   <section id="about-page">
-    <img src="portfolio_image.jpg" alt="Ayush Sahu" class="profile-img" id="open-photo" />
-    <h1>Ayush Sahu</h1>
-    <p>
+    <img src="portfolio_image.jpg" alt="Ayush Sahu" class="profile-img" />
+    <h1 class="name-heading">Ayush Sahu</h1>
+    <p class="bio-text">
       Hi, I'm Ayush Sahu — a curious mind passionate about technology, creativity, and continuous growth. 
       This portfolio is a glimpse into my journey: the skills I've sharpened, the projects I've built, and the challenges I've embraced along the way.
       Whether it's coding, designing, or exploring new ideas, I believe in learning by doing and improving with every step. 
       Feel free to explore my work, and thank you for stopping by — I hope it inspires or helps you in some way.
     </p>
 
+    <!-- Navigation Buttons -->
     <div class="circle-buttons">
-      <a href="aboutme.html">About me</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="internships.html">Internships</a>
-      <a href="projects.html">Projects</a>
-      <a href="certifications.html">Certifications</a>
+      <a href="aboutme.html" class="nav-button about">About me</a>
+      <a href="education.html" class="nav-button education">Education</a>
+      <a href="skills.html" class="nav-button skills">Skills</a>
+      <a href="internships.html" class="nav-button internships">Internships</a>
+      <a href="projects.html" class="nav-button projects">Projects</a>
+      <a href="certifications.html" class="nav-button certifications">Certifications</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>Crafted with ❤️ & curiosity.</p>
+      <p>Crafted with 🖤 & curiosity.</p>
       <p>Connect with me:</p>
       <div class="social-icons">
         <a href="mailto:ayushsahu7649@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
@@ -64,21 +66,36 @@
     </div>
   </footer>
 
-  <!-- Modal for Image -->
-  <div id="photo-modal" class="modal">
-    <span class="close-btn">&times;</span>
-    <img class="modal-photo" src="portfolio_image.jpg" alt="Ayush Sahu" />
-  </div>
-
   <!-- Script -->
-  <script src="script.js"></script>
   <script>
-    // Dark Mode Toggle
-    const toggleBtn = document.getElementById('dark-mode-toggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      body.classList.add(savedTheme);
+      updateIcon(savedTheme);
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+          body.classList.replace('dark-mode', 'light-mode');
+          localStorage.setItem('theme', 'light-mode');
+          updateIcon('light-mode');
+        } else {
+          body.classList.replace('light-mode', 'dark-mode');
+          localStorage.setItem('theme', 'dark-mode');
+          updateIcon('dark-mode');
+        }
+      });
+    }
+
+    function updateIcon(mode) {
+      const icon = toggleBtn.querySelector('i');
+      if (!icon) return;
+      icon.className = mode === 'dark-mode' ? 'fa fa-sun' : 'fa fa-moon';
+    }
   </script>
 </body>
 </html>
