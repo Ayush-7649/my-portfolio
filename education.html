@@ -4,67 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education | Ayush Sahu</title>
-  <link rel="stylesheet" href="education.css" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <section id="education-page">
-    <h1>Education</h1>
+  <!-- Heading Section -->
+  <div id="about-page">
+    <h1 class="welcome-heading">Education</h1>
+  </div>
+
+  <!-- Card Grid Container -->
+  <div class="card-container">
 
     <!-- B.Tech -->
-    <div class="edu-card">
+    <div class="card education">
       <h2>B.Tech in Computer Science & Engineering (Cyber Security)</h2>
-      <p>Oriental College of Technology, Bhopal</p>
-      <p>Affiliated to RGPV, Bhopal</p>
-      <p>Branch: CSE-CY (Cyber Security)</p>
-      <p>Batch: 2023 – 2027</p>
-      <p>Current Semester: 5th (3rd Year)</p>
-      <p>Cumulative CGPA: 7.50</p>
+      <div class="edu-meta">
+        <span><strong>College:</strong> Oriental College of Technology, Bhopal</span>
+        <span><strong>Affiliation:</strong> RGPV</span>
+        <span><strong>Branch:</strong> CSE-CY</span>
+        <span><strong>Batch:</strong> 2023 – 2027</span>
+        <span><strong>Semester:</strong> 5th (3rd Year)</span>
+        <span><strong>CGPA:</strong> 7.50</span>
+      </div>
     </div>
 
     <!-- Class 12 -->
-    <div class="edu-card">
+    <div class="card education">
       <h2>Higher Secondary School Certificate Examination (Class 12)</h2>
-      <p>Board of Secondary Education, Madhya Pradesh</p>
-      <p>St. Mary Convent H S School, Bankhedi, Hoshangabad</p>
-      <p>Stream: Science (PCM)</p>
-      <p>Year of Completion: 2023</p>
-      <p>Percentage: 88%</p>
-      <p><strong>Highlights:</strong></p>
-      <ul class="marksheet-links">
-        <li>Distinction in all subjects</li>
-        <li>Grade A in NCC 'A' Certificate Course</li>
-        <li>Participated in Environmental Education & Disaster Management</li>
-      </ul>
+      <div class="edu-meta">
+        <span><strong>Board:</strong> MPBSE</span>
+        <span><strong>School:</strong> St. Mary Convent H S School, Bankhedi</span>
+        <span><strong>Stream:</strong> Science (PCM)</span>
+        <span><strong>Year:</strong> 2023</span>
+        <span><strong>Percentage:</strong> 88%</span>
+      </div>
+      <div class="edu-achievements">
+        <span>Distinction in all subjects</span>
+        <span>Grade A in NCC 'A' Certificate Course</span>
+        <span>Environmental Education & Disaster Management</span>
+      </div>
     </div>
 
     <!-- Class 10 -->
-    <div class="edu-card">
+    <div class="card education">
       <h2>High School Certificate Examination (Class 10)</h2>
-      <p>Board of Secondary Education, Madhya Pradesh</p>
-      <p>Adarsh Gyan Jyoti H S School, Narsinghpur</p>
-      <p>Year of Completion: 2021</p>
-      <p>Percentage: 84%</p>
-      <p><strong>Highlights:</strong></p>
-      <ul class="marksheet-links">
-        <li>Distinction in all subjects</li>
-        <li>Grade A in Environmental Education & Disaster Management</li>
-        <li>Participated in NCC 'A' Certificate Course</li>
-      </ul>
+      <div class="edu-meta">
+        <span><strong>Board:</strong> MPBSE</span>
+        <span><strong>School:</strong> Adarsh Gyan Jyoti H S School, Narsinghpur</span>
+        <span><strong>Year:</strong> 2021</span>
+        <span><strong>Percentage:</strong> 84%</span>
+      </div>
+      <div class="edu-achievements">
+        <span>Distinction in all subjects</span>
+        <span>Environmental Education & Disaster Management</span>
+        <span>NCC 'A' Certificate Course</span>
+      </div>
     </div>
-  </section>
 
-  <a href="index.html">← Back to Home</a>
+  </div>
 
+  <!-- Navigation -->
+  <div class="circle-buttons">
+    <a href="index.html" class="nav-button about">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>Contact me:</p>
-      <p>
-        <a href="mailto:ayushsahu7649@gmail.com">ayushsahu7649@gmail.com</a> |
-        <a href="https://github.com/Ayush-7649" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/ayushsahu28" target="_blank">LinkedIn</a>
-      </p>
+      <div class="social-icons">
+        <a href="mailto:ayushsahu7649@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Ayush-7649" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/ayushsahu28" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>© 2025 Ayush Sahu. All rights reserved.</p>
     </div>
   </footer>
 
