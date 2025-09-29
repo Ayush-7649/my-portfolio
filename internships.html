@@ -4,17 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Internships | Ayush Sahu</title>
-  <link rel="stylesheet" href="internships.css" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <section class="internships">
-    <h1>Internship Experience</h1>
+  <!-- Heading Section -->
+  <div id="about-page">
+    <h1 class="welcome-heading">Internship Experience</h1>
+  </div>
+
+  <!-- Card Grid Container -->
+  <div class="card-container">
 
     <!-- Cisco Internship -->
-    <div class="internship-card" data-status="Completed">
-      <h2><a href="https://drive.google.com/file/d/1rsfE50C9VyHiJY2D5IgHM3S41vnwIelK/view?usp=sharing" target="_blank">Cybersecurity Virtual Internship – Cisco Networking Academy</a></h2>
+    <div class="card internships">
+      <h2>
+        <a href="https://drive.google.com/file/d/1rsfE50C9VyHiJY2D5IgHM3S41vnwIelK/view?usp=sharing" target="_blank">
+          Cybersecurity Virtual Internship – Cisco Networking Academy
+        </a>
+      </h2>
       <p><strong>Organization:</strong> Cisco Networking Academy</p>
       <p><strong>Institution:</strong> Oriental Group of Institutes</p>
       <p><strong>Duration:</strong> June – August 2025</p>
@@ -27,8 +44,12 @@
     </div>
 
     <!-- TATA Forage Internship -->
-    <div class="internship-card" data-status="Completed">
-      <h2><a href="https://drive.google.com/file/d/1w2k2xoVRcmuIg6MMlxLw6ShgyAMW8LTe/view?usp=sharing" target="_blank">Cybersecurity Analyst Job Simulation – TATA via Forage</a></h2>
+    <div class="card internships">
+      <h2>
+        <a href="https://drive.google.com/file/d/1w2k2xoVRcmuIg6MMlxLw6ShgyAMW8LTe/view?usp=sharing" target="_blank">
+          Cybersecurity Analyst Job Simulation – TATA via Forage
+        </a>
+      </h2>
       <p><strong>Organization:</strong> TATA (Forage Platform)</p>
       <p><strong>Duration:</strong> August 2025</p>
       <p><strong>Location:</strong> Online</p>
@@ -40,8 +61,12 @@
     </div>
 
     <!-- Python Internship -->
-    <div class="internship-card" data-status="Completed">
-      <h2><a href="https://drive.google.com/file/d/1MxIDPNJZgDGQlUTa-Qm91ENrdrABj6K6/view?usp=sharing" target="_blank">Python Programming Internship – Oriental College of Technology</a></h2>
+    <div class="card internships">
+      <h2>
+        <a href="https://drive.google.com/file/d/1MxIDPNJZgDGQlUTa-Qm91ENrdrABj6K6/view?usp=sharing" target="_blank">
+          Python Programming Internship – Oriental College of Technology
+        </a>
+      </h2>
       <p><strong>Organization:</strong> Oriental College of Technology, Bhopal</p>
       <p><strong>Department:</strong> Computer Science & Engineering (Cyber Security)</p>
       <p><strong>Duration:</strong> August 27 – September 2, 2024</p>
@@ -52,18 +77,24 @@
         <li>Supervised by faculty including Dr. Sushila Sonare and Dr. K.K. Dwivedi</li>
       </ul>
     </div>
-  </section>
 
-  <a href="index.html">← Back to Home</a>
+  </div>
 
+  <!-- Navigation -->
+  <div class="circle-buttons">
+    <a href="index.html" class="nav-button about">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>Contact me:</p>
-      <p>
-        <a href="mailto:ayushsahu7649@gmail.com">ayushsahu7649@gmail.com</a> |
-        <a href="https://github.com/Ayush-7649" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/ayushsahu28" target="_blank">LinkedIn</a>
-      </p>
+      <div class="social-icons">
+        <a href="mailto:ayushsahu7649@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Ayush-7649" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/ayushsahu28" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>© 2025 Ayush Sahu. All rights reserved.</p>
     </div>
   </footer>
 
