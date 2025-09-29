@@ -4,91 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Ayush Sahu</title>
-  <link rel="stylesheet" href="projects.css" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <section id="projects-page">
-    <h1>My Projects</h1>
+  <h1 class="welcome-heading">My Projects</h1>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h2><a href="https://github.com/Ayush-7649/Decentralized-Crowdfunding-Platform" target="_blank">Decentralized Crowdfunding Platform</a></h2>
-      <p><strong>Description:</strong> A blockchain-based crowdfunding system that eliminates intermediaries and ensures transparency using Ethereum smart contracts. Contributors can fund projects with confidence, knowing their investments are protected by immutable logic.</p>
-      <p><strong>Tech Stack:</strong> Solidity, Hardhat, React.js, Tailwind CSS, Ethers.js, ThirdWeb</p>
-      <ul>
-        <li>Campaign creation with custom goals and deadlines</li>
-        <li>Smart contract automation for fund collection and refunds</li>
-        <li>MetaMask wallet integration and real-time analytics</li>
-        <li>Publicly verifiable transactions and contributor tracking</li>
-      </ul>
-    </div>
+  <!-- Project 1 -->
+  <div class="card projects">
+    <h2><a href="https://github.com/Ayush-7649/Decentralized-Crowdfunding-Platform" target="_blank">Decentralized Crowdfunding Platform</a></h2>
+    <p><strong>Description:</strong> A blockchain-based crowdfunding system that eliminates intermediaries and ensures transparency using Ethereum smart contracts. Contributors can fund projects with confidence, knowing their investments are protected by immutable logic.</p>
+    <p><strong>Tech Stack:</strong> Solidity, Hardhat, React.js, Tailwind CSS, Ethers.js, ThirdWeb</p>
+    <ul>
+      <li>Campaign creation with custom goals and deadlines</li>
+      <li>Smart contract automation for fund collection and refunds</li>
+      <li>MetaMask wallet integration and real-time analytics</li>
+      <li>Publicly verifiable transactions and contributor tracking</li>
+    </ul>
+  </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h2><a href="https://github.com/Ayush-7649/SCT_CS_1" target="_blank">SCT_CS_1 – Caesar Cipher Encryption Tool</a></h2>
-      <p><strong>Description:</strong> A Python program that encrypts and decrypts messages using the classical Caesar Cipher algorithm. Users can input a message and shift value to encode or decode text.</p>
-      <p><strong>Tech Stack:</strong> Python</p>
-      <ul>
-        <li>Supports both encryption and decryption</li>
-        <li>Works with uppercase and lowercase letters</li>
-        <li>User-defined shift key and terminal-based interaction</li>
-        <li>Demonstrates classical cryptography principles</li>
-      </ul>
-    </div>
+  <!-- Project 2 -->
+  <div class="card projects">
+    <h2><a href="https://github.com/Ayush-7649/SCT_CS_1" target="_blank">SCT_CS_1 – Caesar Cipher Encryption Tool</a></h2>
+    <p><strong>Description:</strong> A Python program that encrypts and decrypts messages using the classical Caesar Cipher algorithm. Users can input a message and shift value to encode or decode text.</p>
+    <p><strong>Tech Stack:</strong> Python</p>
+    <ul>
+      <li>Supports both encryption and decryption</li>
+      <li>Works with uppercase and lowercase letters</li>
+      <li>User-defined shift key and terminal-based interaction</li>
+      <li>Demonstrates classical cryptography principles</li>
+    </ul>
+  </div>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h2><a href="https://github.com/Ayush-7649/SCT_CS_2" target="_blank">SCT_CS_2 – Image Encryption via Pixel Manipulation</a></h2>
-      <p><strong>Description:</strong> A basic image encryption tool using pixel-level operations like XOR and row swapping. It encrypts and decrypts images using a numeric key.</p>
-      <p><strong>Tech Stack:</strong> Python, Pillow, NumPy</p>
-      <ul>
-        <li>Encrypts PNG/JPG images with a numeric key</li>
-        <li>Decrypts using the same key for restoration</li>
-        <li>Works with RGB and grayscale formats</li>
-        <li>Educational tool for understanding image security</li>
-      </ul>
-    </div>
+  <!-- Project 3 -->
+  <div class="card projects">
+    <h2><a href="https://github.com/Ayush-7649/SCT_CS_2" target="_blank">SCT_CS_2 – Image Encryption via Pixel Manipulation</a></h2>
+    <p><strong>Description:</strong> A basic image encryption tool using pixel-level operations like XOR and row swapping. It encrypts and decrypts images using a numeric key.</p>
+    <p><strong>Tech Stack:</strong> Python, Pillow, NumPy</p>
+    <ul>
+      <li>Encrypts PNG/JPG images with a numeric key</li>
+      <li>Decrypts using the same key for restoration</li>
+      <li>Works with RGB and grayscale formats</li>
+      <li>Educational tool for understanding image security</li>
+    </ul>
+  </div>
 
-    <!-- Project 4 -->
-    <div class="project-card">
-      <h2><a href="https://github.com/Ayush-7649/SCT_CS_3" target="_blank">SCT_CS_3 – Password Strength Checker</a></h2>
-      <p><strong>Description:</strong> A Python tool that evaluates password strength based on length, character variety, and symbol usage. Offers feedback and suggestions to improve security.</p>
-      <p><strong>Tech Stack:</strong> Python (using <code>re</code> module)</p>
-      <ul>
-        <li>Checks for uppercase, lowercase, digits, and special characters</li>
-        <li>Classifies passwords as Weak, Medium, or Strong</li>
-        <li>No external libraries required</li>
-        <li>Useful for login systems and form validation</li>
-      </ul>
-    </div>
+  <!-- Project 4 -->
+  <div class="card projects">
+    <h2><a href="https://github.com/Ayush-7649/SCT_CS_3" target="_blank">SCT_CS_3 – Password Strength Checker</a></h2>
+    <p><strong>Description:</strong> A Python tool that evaluates password strength based on length, character variety, and symbol usage. Offers feedback and suggestions to improve security.</p>
+    <p><strong>Tech Stack:</strong> Python (using <code>re</code> module)</p>
+    <ul>
+      <li>Checks for uppercase, lowercase, digits, and special characters</li>
+      <li>Classifies passwords as Weak, Medium, or Strong</li>
+      <li>No external libraries required</li>
+      <li>Useful for login systems and form validation</li>
+    </ul>
+  </div>
 
-    <!-- Project 5 -->
-    <div class="project-card">
-      <h2><a href="https://github.com/Ayush-7649/SCT_CS_4" target="_blank">SCT_CS_4 – Keylogger Program</a></h2>
-      <p><strong>Description:</strong> A basic keylogger developed for educational purposes. It records keystrokes and logs them to a file while running locally.</p>
-      <p><strong>Tech Stack:</strong> Python, <code>pynput</code> library</p>
-      <ul>
-        <li>Captures regular and special key inputs</li>
-        <li>Logs keystrokes to <code>keystrokes.log</code></li>
-        <li>Can be stopped safely with the ESC key</li>
-        <li>Demonstrates ethical cybersecurity practices</li>
-      </ul>
-    </div>
+  <!-- Project 5 -->
+  <div class="card projects">
+    <h2><a href="https://github.com/Ayush-7649/SCT_CS_4" target="_blank">SCT_CS_4 – Keylogger Program</a></h2>
+    <p><strong>Description:</strong> A basic keylogger developed for educational purposes. It records keystrokes and logs them to a file while running locally.</p>
+    <p><strong>Tech Stack:</strong> Python, <code>pynput</code> library</p>
+    <ul>
+      <li>Captures regular and special key inputs</li>
+      <li>Logs keystrokes to <code>keystrokes.log</code></li>
+      <li>Can be stopped safely with the ESC key</li>
+      <li>Demonstrates ethical cybersecurity practices</li>
+    </ul>
+  </div>
 
-    <!-- Back to Home -->
-    <a href="index.html">← Back to Home</a>
-  </section>
+  <!-- Navigation -->
+  <div class="circle-buttons">
+    <a href="index.html" class="nav-button about">← Back to Home</a>
+  </div>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>Contact me:</p>
-      <p>
-        <a href="mailto:ayushsahu7649@gmail.com">ayushsahu7649@gmail.com</a> |
-        <a href="https://github.com/Ayush-7649" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/ayushsahu28" target="_blank">LinkedIn</a>
-      </p>
+      <div class="social-icons">
+        <a href="mailto:ayushsahu7649@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Ayush-7649" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/ayushsahu28" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>© 2025 Ayush Sahu. All rights reserved.</p>
     </div>
   </footer>
 
