@@ -547,3 +547,23 @@ body.dark-mode .card.journey ul li {
 .card.cyberclub h2 {
   color: #00ffff;
 }
+/* Highlight recommendation links */
+.card.internships ul li a {
+  color: #00ffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card.internships ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* Optional: Add scroll icon before recommendation link */
+.card.internships ul li a i {
+  margin-right: 6px;
+  color: #00ffff;
+}
+
+
